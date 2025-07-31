@@ -1,0 +1,15 @@
+    /* style.css */
+    :root {
+        --background-color: #ffffff;
+        --text-color: #333333;
+    }
+
+    body.dark-mode {
+        --background-color: #0d1117;
+        --text-color: #c9d1d9;
+    }
+
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
