@@ -3,6 +3,12 @@ layout: default
 title : Homepage
 navbar_title: Home
 ---
+<button id="theme-toggle">Toggle Theme</button>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 {% include widgets/profile_card.html %}
 
 {% include widgets/debug_url.html %}
@@ -26,3 +32,5 @@ navbar_title: Home
         title='<i class="fas fa-star"></i> Selected Publications'
     %}
 {% endif %}
+        <script src="script.js"></script>
+    </body>
