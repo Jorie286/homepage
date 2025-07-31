@@ -3,9 +3,10 @@ secondary_name: ""
 navbar_name: "Jorie McDermott"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- logo: /assets/images/badges/Ohio_State_University_seal.png
+  name: Ohio State University
+- logo: /assets/images/badges/CIERA_vertical_lockup_purple_003-1kfx0s0.png  # Logo is optional
   name: Northwestern University CIERA
-- name: Ohio State University
 
 
 email: "mcdermott.286@osu.edu"
@@ -36,14 +37,13 @@ portrait_caption: >-
 
 education:
 - name: Ohio State University
-  logo: /assets/images/badges/MIT_Social_circle.png
+  logo: /assets/images/badges/Ohio_State_University_seal.png
   position: >- 
     Department of Astronomy and Astrophysics <br/>
     Department of Physics <br/>
     Bachelors
   date: Aug. 2023 - present
 - name: Sinclair Community College
-  logo: /assets/images/badges/PKU_red.png
   position: >-
     College of Arts and Sciences
     Associate of Science
@@ -51,11 +51,11 @@ education:
 
 experience:
 - name: Ohio State University
-  logo: /assets/images/badges/PKU_red.png
+  logo: /assets/images/badges/Ohio_State_University_seal.png
   position: Research Assistant
   date: May. 2024 - present
 - name: Northwestern University CIERA
-  logo: /assets/images/badges/PKU_red.png
+  logo: /assets/images/badges/CIERA_vertical_lockup_purple_003-1kfx0s0.png
   position: Research Intern
   date: June. 2025 - Aug. 2025
 
