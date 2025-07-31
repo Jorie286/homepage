@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Jorie McDermott"
 
 positions:
-- logo: /assets/images/badges/Ohio_State_University_seal.png
+- logo: /assets/images/badges/Display_Image_TheOhioStateUniversity_DoNotUse.png
   name: Ohio State University
 - logo: /assets/images/badges/CIERA_vertical_lockup_purple_003-1kfx0s0.png  # Logo is optional
   name: Northwestern University CIERA
@@ -37,13 +37,14 @@ portrait_caption: >-
 
 education:
 - name: Ohio State University
-  logo: /assets/images/badges/Ohio_State_University_seal.png
+  logo: /assets/images/badges/Display_Image_TheOhioStateUniversity_DoNotUse.png
   position: >- 
     Department of Astronomy and Astrophysics <br/>
     Department of Physics <br/>
     Bachelors
   date: Aug. 2023 - present
 - name: Sinclair Community College
+  logo: /assets/images/badges/sinclair-college-primary-low-res-web.png
   position: >-
     College of Arts and Sciences
     Associate of Science
@@ -51,7 +52,7 @@ education:
 
 experience:
 - name: Ohio State University
-  logo: /assets/images/badges/Ohio_State_University_seal.png
+  logo: /assets/images/badges/Display_Image_TheOhioStateUniversity_DoNotUse.png
   position: Research Assistant
   date: May. 2024 - present
 - name: Northwestern University CIERA
