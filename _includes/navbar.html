@@ -51,6 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style>
+    .body {
+        transition: background-color 0.4s, color 0.4s;
+    }
     body.dark-theme {
         background-color: #222;
         color: #fff;
@@ -62,14 +65,5 @@ document.addEventListener('DOMContentLoaded', function() {
     body.dark-theme .navbar {
         background-color: #333 !important;
         color: #fff !important;
-    }
-    .card {
-        background-color: #fff;
-        color: #222;
-        transition: background-color 0.4s, color 0.4s;
-    }
-    body.dark-theme .card {
-        background-color: #333;
-        color: #fff;
     }
 </style>
