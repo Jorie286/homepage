@@ -85,15 +85,35 @@ body.dark-theme .navbar {
 }
 
 /* Card dark theme styles */
-body.dark-theme .card,
 body.dark-theme .bg-white,
-body.dark-theme .shadow-sm,
-body.dark-theme .rounded-xl,
-body.dark-theme .rounded-xl-bottom,
+body.dark-theme .shadow-sm {
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+}
+
+body.dark-theme .rounded-xl-bottom {
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+    border-bottom-right-radius: 0.8rem !important;
+    border-bottom-left-radius: 0.8rem !important;
+}
+
 body.dark-theme .rounded-xl-top {
     background-color: #2b2b2b !important;
     color: #fafafa !important;
     box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+body.dark-theme .card,
+body.dark-theme .rounded-xl {
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+    border-radius: 0.8rem!important;
 }
 
 body.dark-theme .card-body, 
