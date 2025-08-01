@@ -51,19 +51,122 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style>
-    .body {
-        transition: background-color 0.4s, color 0.4s;
-    }
-    body.dark-theme {
-        background-color: #222;
-        color: #fff;
-        transition: background-color 0.4s, color 0.4s;
-    }
-    .navbar {
-        transition: background-color 0.4s, color 0.4s;
-    }
-    body.dark-theme .navbar {
-        background-color: #333 !important;
-        color: #fff !important;
-    }
+    body {
+    background-color: #fff;
+    color: #222;
+    transition: background-color 0.4s, color 0.4s;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding-top: 5.0rem;
+}
+
+body.dark-theme {
+    background-color: #222;
+    color: #fff;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    color: #222;
+    opacity: 0.95;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-theme .navbar {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.card, .bg-white, .shadow-sm, .rounded-xl, .rounded-xl-bottom, .rounded-xl-top {
+    background-color: #fff;
+    color: #222;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Card dark theme styles */
+body.dark-theme .card,
+body.dark-theme .bg-white,
+body.dark-theme .shadow-sm,
+body.dark-theme .rounded-xl,
+body.dark-theme .rounded-xl-bottom,
+body.dark-theme .rounded-xl-top {
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+}
+
+body.dark-theme .card-body, 
+body.dark-theme .media-body {
+    background-color: #232323 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme h6 {
+    color: #ffd700 !important;
+}
+
+.card {
+    border-radius: 0.8rem!important;
+}
+
+.card-img-overlay {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl-bottom {
+    border-bottom-right-radius: 0.8rem !important;
+    border-bottom-left-radius: 0.8rem !important;
+}
+
+.rounded-xl-top {
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+/* Additional utility classes for cards and text */
+.inline-badge {
+    height: 16px;
+    vertical-align: -10%;
+    margin-right: 2px;
+    line-break: unset;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.cover-image {
+    width: 180px;
+    max-height: 120px;
+}
+
+.abstract-body {
+    min-height: 100px;
+}
+
+img.lazy, div.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+.badge-publication {
+    font-size: 100%;
+}
+
+.email-text {
+    font-family: Courier, monospace;
+}
 </style>
