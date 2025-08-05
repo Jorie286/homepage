@@ -1,6 +1,8 @@
 @charset "utf-8";
 body {
-    background-color: #fff
+    background-color: #fff;
+    color: #222
+    transition: background-color 0.4s, color 0.4s;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding-top: 5.0rem;
@@ -44,11 +46,18 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
+    background-color: #f8f9fa;
     color: #222;
     display: flex;
     align-items: center;
     padding: 0.5em 0.75em;
     opacity: 0.95;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.nav-link, .navbar .navbar-brand {
+  color: #222 !important;
+  transition: color 0.4s;
 }
 
 .inline-badge {
@@ -58,11 +67,13 @@ h1, h2, h3, h4, h5, h6,
     line-break: unset;
 }
 
-body.dark-theme .badge,
-body.dark-theme .inline-badge {
-    background-color: #fff !important;
-    color: #222 !important;
-    border: 1px solid #e0e0e0 !important;
+theme-icon.fa-sun {
+  color: #ffd700; /* gold/yellow sun */
+  transition: color 0.4s;
+}
+
+.bg-white, .shadow-sm, .rounded-xl-bottom, .rounded-xl-top, .card, .rounded-xl, .card-body, .media-body, .cover-image {
+    transition: color 0.4s;
 }
 
 .no-break {
@@ -102,3 +113,94 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
+
+/*Dark theme modifications*/
+body.dark-theme {
+    background-color: #363636 !important;
+    color: #fff;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-theme .navbar {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+body.dark-theme .badge,
+body.dark-theme .inline-badge {
+    background-color: #fff !important;
+    color: #222 !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+body.dark-theme .navbar .nav-link,
+body.dark-theme .navbar .navbar-brand {
+  color: #fff !important;
+  transition: color 0.4s;
+}
+
+body.dark-theme #theme-icon.fa-moon {
+  color: #add8e6 !important; /* bright moon in dark mode */
+}
+    
+/* Card dark theme styles */
+body.dark-theme .bg-white,
+body.dark-theme .shadow-sm {
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+}
+
+body.dark-theme .rounded-xl-bottom {
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+    border-bottom-right-radius: 0.8rem !important;
+    border-bottom-left-radius: 0.8rem !important;
+}
+
+body.dark-theme .rounded-xl-top {
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+body.dark-theme .card,
+body.dark-theme .rounded-xl{
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+    border-radius: 0.8rem!important;
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+body.dark-theme .card-body, 
+body.dark-theme .media-body,
+body.dark-theme .cover-image {
+    background-color: #2b2b2b !important;
+    color: #fafafa !important;
+    border-radius: 0.8rem!important;
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+body.dark-theme .publication-authors{
+    color: #fff !important;
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme h6 {
+    color: #fff !important;
+}
+
+body.dark-theme a {
+  color: #8ecfff; /* Links in dark mode */
+}
+
+body.dark-theme .text-muted,
+body.dark-theme .small {
+  color: #bbb !important; /* Muted/small text */
+}
