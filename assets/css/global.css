@@ -113,10 +113,6 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
-.year-selection {
-  color: #1302fa !important;
-}
-
 
 /*Dark theme modifications*/
 body.dark-theme {
