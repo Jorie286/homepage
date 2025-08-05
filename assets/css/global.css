@@ -113,7 +113,7 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
-.navbar-year {
+div.navbar-year {
   color: #1302fa !important;
 }
 
@@ -187,7 +187,7 @@ body.dark-theme .cover-image {
     border-top-right-radius: 0.8rem !important;
 }
 
-body.dark-theme .publication-authors{
+body.dark-theme div.publication-authors{
     color: #fff !important;
 }
 
