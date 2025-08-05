@@ -13,7 +13,7 @@
                 </li>
                 {% endfor %}
                 <li id="theme-toggle" class="nav-item {% if item.name == page.navbar_title %}active{% endif %}">
-                    <a role="button" aria-labelledby="theme-icon" style="padding: 0.5em; margin: 0 auto; margin-top: 20px"><i id="theme-icon" class="fa-solid fa-sun fa-2xl" style="color: #ffd700;" aria-hidden="true" title="toggle theme"></i></a>
+                    <a role="button" aria-labelledby="theme-icon" style="padding: 0.5em; margin: 0 auto; margin-top: 20px"><i id="theme-icon" class="fa-solid fa-sun fa-xl" aria-hidden="true" title="toggle theme"></i></a>
                 </li>
             </ul>
         </div>
@@ -89,6 +89,24 @@ body.dark-theme .navbar .nav-link,
 body.dark-theme .navbar .navbar-brand {
   color: #fff !important;
   transition: color 0.4s;
+}
+
+/* Default (light theme): */
+theme-icon.fa-sun {
+  color: #ffd700; /* gold/yellow sun */
+  transition: color 0.4s;
+}
+theme-icon.fa-moon {
+  color: #333; /* dark moon for light theme */
+  transition: color 0.4s;
+}
+
+/* Dark theme overrides: */
+body.dark-theme #theme-icon.fa-sun {
+  color: #bbb; /* muted sun in dark mode */
+}
+body.dark-theme #theme-icon.fa-moon {
+  color: #8ecfff; /* bright moon in dark mode */
 }
 
 .card, .bg-white, .shadow-sm, .rounded-xl, .rounded-xl-bottom, .rounded-xl-top {
