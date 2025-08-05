@@ -12,7 +12,7 @@
                     <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
-                <li id="theme-toggle" class="nav-item {% if item.name == page.navbar_title %}active{% endif %}">
+                <li id="theme-toggle" class="nav-item d-flex align-items-center {% if item.name == page.navbar_title %}active{% endif %}">
                     <a role="button" aria-labelledby="theme-icon" style="padding: 0.5em; margin-top: 20px"><i id="theme-icon" class="fa-solid fa-sun fa-xl" style="color: #ffd700" aria-hidden="true" title="toggle theme"></i></a>
                 </li>
             </ul>
@@ -95,13 +95,11 @@ body.dark-theme .navbar .navbar-brand {
 theme-icon.fa-sun {
   color: #ffd700; /* gold/yellow sun */
   transition: color 0.4s;
-  bottom: 0px !important;
 }
 
 /* Dark theme overrides: */
 body.dark-theme #theme-icon.fa-moon {
   color: #add8e6 !important; /* bright moon in dark mode */
-  bottom: 0px !important;
 }
 
 .bg-white, .shadow-sm, .rounded-xl-bottom, .rounded-xl-top, .card, .rounded-xl, .card-body, .media-body, .cover-image {
