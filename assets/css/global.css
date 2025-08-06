@@ -113,8 +113,8 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
-.navbar-year .nav-link {
-    color: #7d4039; /* Replace with your desired color */
+.navbar-year {
+    color: #7d4039 !important; /* Replace with your desired color */
 }
 
 
