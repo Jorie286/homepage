@@ -113,6 +113,10 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
+.publication-date {
+  color: #ff5733; /* Replace with your preferred color */
+}
+
 
 /*Dark theme modifications*/
 body.dark-theme {
