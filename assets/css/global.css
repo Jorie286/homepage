@@ -119,6 +119,10 @@ div.lazy {
 
 
 /*Dark theme modifications*/
+body.dark-theme #navbar-year {
+    color: #fff !important;
+}
+
 body.dark-theme {
     background-color: #363636 !important;
     color: #fff;
