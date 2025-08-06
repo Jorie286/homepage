@@ -113,6 +113,10 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
+#navbar-year .nav-link {
+    color: #1302fa; /* Replace with your desired color */
+}
+
 
 /*Dark theme modifications*/
 body.dark-theme {
