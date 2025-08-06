@@ -113,16 +113,8 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
-#navbar-year {
-    color: #222 !important; /* Replace with your desired color */
-}
-
 
 /*Dark theme modifications*/
-body.dark-theme #navbar-year {
-    color: #fff !important;
-}
-
 body.dark-theme {
     background-color: #363636 !important;
     color: #fff;
