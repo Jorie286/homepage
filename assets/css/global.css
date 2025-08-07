@@ -187,7 +187,8 @@ body.dark-theme .cover-image {
     border-top-right-radius: 0.8rem !important;
 }
 
-body.dark-theme .publication-authors{
+body.dark-theme p.publication-authors, 
+body.dark-theme .publication-authors * {
     color: #fff !important;
 }
 
