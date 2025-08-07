@@ -209,3 +209,5 @@ body.dark-theme .text-muted,
 body.dark-theme .small {
   color: #bbb !important; /* Muted/small text */
 }
+
+@media (prefers-color-scheme: dark) { mark { background-color: #ffe066 !important;}}
