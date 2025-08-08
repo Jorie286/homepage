@@ -53,9 +53,7 @@ education:
 experience:
 - name: Ohio State University
   logo: /assets/images/badges/Display_Image_TheOhioStateUniversity_DoNotUse.png
-  position: >- 
-    Research Assistant
-    Instructional Assistant
+  position: Research Assistant, Instructional Assistant
   date: May. 2024 - present
 - name: Northwestern University CIERA
   logo: /assets/images/badges/CIERA_vertical_lockup_purple_003-1kfx0s0.png
