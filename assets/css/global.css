@@ -189,7 +189,7 @@ body.dark-theme .cover-image {
 
 body.dark-theme p.publication-authors, 
 body.dark-theme .publication-authors * {
-    color: #bbb !important;
+    color: #c0c0c0 !important;
 }
 
 body.dark-theme h1, 
@@ -210,4 +210,6 @@ body.dark-theme .small {
   color: #bbb !important; /* Muted/small text */
 }
 
-@media (prefers-color-scheme: dark) { mark { background-color: #ffe066 !important;}}
+body.dark-theme mark {
+  background-color: rgba(255, 224, 102, 0.5) !important;
+}
