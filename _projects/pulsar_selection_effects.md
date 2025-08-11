@@ -13,6 +13,10 @@ authors:
   - Debatri Chattopadhyay
   - Vicky Kalogera
 links:
-  More info: https://jorie286.github.io/project/publications/
-  Code: https://github.com/luost26/academic-homepage
+  More info:
+    url: https://jorie286.github.io/project/publications/
+    class: fa-file-lines
+  Code:
+    url: https://github.com/luost26/academic-homepage
+    class: fa-github
 ---
