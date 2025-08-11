@@ -51,12 +51,10 @@ h1, h2, h3, h4, h5, h6,
     align-items: center;
     padding: 0.5em 0.75em;
     opacity: 0.95;
-    transition: background-color 0.4s, color 0.4s;
 }
 
 .navbar .navbar-brand {
   color: #222 !important;
-  transition: color 0.4s;
 }
 
 .inline-badge {
@@ -68,11 +66,6 @@ h1, h2, h3, h4, h5, h6,
 
 theme-icon.fa-sun {
   color: #ffd700; /* gold/yellow sun */
-  transition: color 0.4s;
-}
-
-.bg-white, .shadow-sm, .rounded-xl-bottom, .rounded-xl-top, .card, .rounded-xl, .card-body, .media-body, .cover-image {
-    transition: color 0.4s;
 }
 
 .no-break {
@@ -121,7 +114,6 @@ div.lazy {
 body.dark-theme {
     background-color: #363636 !important;
     color: #fff;
-    transition: background-color 0.4s, color 0.4s;
 }
 
 body.dark-theme .navbar {
@@ -139,7 +131,6 @@ body.dark-theme .inline-badge {
 body.dark-theme .navbar .nav-link,
 body.dark-theme .navbar .navbar-brand {
   color: #fff !important;
-  transition: color 0.4s;
 }
 
 body.dark-theme #theme-icon.fa-moon {
