@@ -14,9 +14,9 @@ authors:
   - Vicky Kalogera
 links:
   More info:
-    url: https://jorie286.github.io/project/publications/
+    url: https://jorie286.github.io/CIERA_project
     class: fa-regular fa-file-lines
   Code:
-    url: https://github.com/luost26/academic-homepage
+    url: https://github.com/Jorie286/Selection_effects.git
     class: fa-brands fa-github
 ---
