@@ -14,7 +14,7 @@ authors:
   - Vicky Kalogera
 links:
   More info:
-    url: /homepage/project_pages/selection_effects
+    url: /project_pages/selection_effects
     class: fa-regular fa-file-lines
   Code:
     url: https://github.com/Jorie286/Selection_effects.git
