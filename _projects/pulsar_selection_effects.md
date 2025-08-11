@@ -15,8 +15,8 @@ authors:
 links:
   More info:
     url: https://jorie286.github.io/project/publications/
-    class: fa-file-lines
+    class: fa-regular fa-file-lines
   Code:
     url: https://github.com/luost26/academic-homepage
-    class: fa-github
+    class: fa-brands fa-github
 ---
