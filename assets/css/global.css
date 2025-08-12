@@ -110,16 +110,6 @@ div.lazy {
     color: #222 !important
 }
 
-.sidebar {
-  width: 220px;
-  padding: 1em;
-  background: #f7f7f7;
-  border-right: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  height: 100vh; /* full viewport height */
-}
-
 /*Dark theme modifications*/
 body.dark-theme {
     background-color: #363636 !important;
