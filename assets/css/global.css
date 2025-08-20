@@ -82,6 +82,10 @@ theme-icon.fa-sun {
     min-height: 100px;
 }
 
+.CIERA-logo-image {
+    background-color: #fff
+}
+
 img.lazy {
     background-image: url('images/loading.gif');
     background-repeat: no-repeat;
