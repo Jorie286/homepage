@@ -142,8 +142,8 @@ body.dark-theme #theme-icon.fa-moon {
 
 body.dark-theme .navbar-toggler {
   /* Change background or border color if needed */
-  background-color: #23272b;
-  border-color: #f8f9fa;
+  background-color: #23272b !important;
+  border-color: #f8f9fa !important;
 }
 
 body.dark-theme .navbar-toggler i,
