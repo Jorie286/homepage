@@ -12,11 +12,11 @@
                     <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
-                <li id="theme-toggle" class="nav-item d-flex align-items-center {% if item.name == page.navbar_title %}active{% endif %}">
-                    <a role="button" aria-labelledby="theme-icon" style="padding: 0.5em"><i id="theme-icon" class="fa-solid fa-sun fa-xl" style="color: #ffd700" aria-hidden="true" title="toggle theme"></i></a>
-                </li>
             </ul>
         </div>
+        <li id="theme-toggle" class="d-flex align-items-center">
+            <a role="button" aria-labelledby="theme-icon" style="padding: 0.5em"><i id="theme-icon" class="fa-solid fa-sun fa-xl" style="color: #ffd700" aria-hidden="true"></i></a>
+        </li>
     </div>
 </nav>
 
