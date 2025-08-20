@@ -82,7 +82,7 @@ theme-icon.fa-sun {
     min-height: 100px;
 }
 
-.CIERA-logo-image {
+div.CIERA-logo-image {
     background-color: #fff
 }
 
@@ -125,8 +125,7 @@ body.dark-theme .navbar {
     color: #fff !important;
 }
 
-body.dark-theme .badge,
-body.dark-theme .inline-badge {
+body.dark-theme .badge {
     background-color: #fff !important;
     color: #222 !important;
     border: 1px solid #e0e0e0 !important;
