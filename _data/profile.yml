@@ -5,7 +5,7 @@ navbar_name: "Jorie McDermott"
 positions:
 - logo: /assets/images/badges/Display_Image_TheOhioStateUniversity_DoNotUse.png
   name: Ohio State University
-- logo: /assets/images/badges/CIERA_vertical_lockup_purple_003-1kfx0s0.png  # Logo is optional
+- logo: /assets/images/badges/Ciera Logo FINAL_CIERA_15_crest_purple.png  # Logo is optional
   name: Northwestern University CIERA
 
 
@@ -58,7 +58,7 @@ experience:
     Instructional Assistant
   date: May. 2024 - present
 - name: Northwestern University CIERA
-  logo: /assets/images/badges/CIERA_vertical_lockup_purple_003-1kfx0s0.png
+  logo: /assets/images/badges/Ciera Logo FINAL_CIERA_15_crest_purple.png
   position: Participant in CIERA Research Experience for Undergraduates
   date: June. 2025 - Aug. 2025
 
