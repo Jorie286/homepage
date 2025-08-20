@@ -13,6 +13,9 @@ authors:
   - Debatri Chattopadhyay
   - Vicky Kalogera
 links:
+  More info:
+    url: https://jorie286.github.io/homepage/project_pages/test.md
+    class: fa-regular fa-file-lines
 ---
 
 # Testing
