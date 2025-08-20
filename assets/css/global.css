@@ -144,7 +144,7 @@ body.dark-theme #theme-icon.fa-moon {
   color: #add8e6 !important; /* bright moon in dark mode */
 }
 
-body.dark-theme #navbar-toggler {
+body.dark-theme #navbar-toggler.fa-map {
     color: #fff !important;
 }
 
