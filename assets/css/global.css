@@ -125,6 +125,10 @@ body.dark-theme .navbar {
     color: #fff !important;
 }
 
+body.dark-theme footer {
+  background-color: #d3d3d3; /* or your preferred dark color */
+}
+
 body.dark-theme .badge {
     background-color: #fff !important;
     color: #222 !important;
