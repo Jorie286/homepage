@@ -35,7 +35,15 @@ plugins:
 # timezone: Asia/Shanghai
 
 collections:
-  - projects
-  - publications
-  - news
-  - showcase
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:path/
+  showcase:
+    output: true
+    permalink: /:collection/:path/
