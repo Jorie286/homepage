@@ -140,8 +140,15 @@ body.dark-theme #theme-icon.fa-moon {
   color: #add8e6 !important; /* bright moon in dark mode */
 }
 
-body.dark-theme #navbar-toggler.fa-map {
-    color: #fff !important;
+body.dark-theme .navbar-toggler {
+  /* Change background or border color if needed */
+  background-color: #23272b;
+  border-color: #f8f9fa;
+}
+
+body.dark-theme .navbar-toggler i,
+body.dark-theme .navbar-toggler {
+  color: #f8f9fa !important; /* or any color you want for the icon/text */
 }
 
 /* Card dark theme styles */
