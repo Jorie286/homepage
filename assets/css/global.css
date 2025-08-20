@@ -143,7 +143,11 @@ body.dark-theme .navbar .navbar-brand {
 body.dark-theme #theme-icon.fa-moon {
   color: #add8e6 !important; /* bright moon in dark mode */
 }
-    
+
+body.dark-theme #navbar-toggler {
+    color: #fff !important;
+}
+
 /* Card dark theme styles */
 body.dark-theme .bg-white,
 body.dark-theme .shadow-sm {
