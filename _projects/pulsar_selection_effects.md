@@ -1,6 +1,6 @@
 ---
 title:          "Radio Pulsar Selection Effects"
-date:           2025
+date:           2025-08-22 00:01:00 +0800
 selected:       true
 proj_date:      "2025"
 
