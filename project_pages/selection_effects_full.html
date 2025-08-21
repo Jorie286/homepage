@@ -69,22 +69,28 @@ results derived from pulsar data.</br>
 </p>
 
         <h3 id="Methods">Calculating Selection Effects</h3>
-        <p>To evaluate the selection effects of a pulsar system and
-assess whether a survey would detect it, we compare the
-modeled pulsar’s luminosity with the survey’s minimum
-detectable luminosity at the pulsar’s distance. If the
-pulsar’s luminosity is below this threshold, it is classified as undetected. Detection outcomes are encoded
-as a binary variable, with 1 indicating detection and 0
-indicating non-detection. </br>
-In this work, we test our selection-effects pipeline – a modernized version of the psrEvolve code \citep{Pop_synth_DNS} 
-– using a generated population of pulsars. We create a population of binary pulsar systems within a given set of restrictions for their parameters.
-Given the characteristics of a representative pulsar survey, we then compute the selection effects for each pulsar in our population to evaluate which systems
-would be detectable and how their observed parameters might be biased by survey sensitivity limits and observational systematics.</br>
-These detection outcomes do not take into consideration the probability that the pulsar will be seen by the
-survey. To accurately determine the likelihood of a survey detecting the pulsar, we need to consider the fraction
-of the sky covered by its beam. This is called the beaming fraction. In general, a larger beam width makes detecting
-the pulsar easier since the survey is more likely to cover
-an area of the sky that overlaps with the beam.
+        <p>In this work, we test our selection-effects pipeline –
+a modernized version of the psrEvolve code (Oslowski
+et al. 2011) – using a generated population of pulsars.
+We create a population of binary pulsar systems within a
+given set of restrictions for their parameters. Given the
+characteristics of a representative pulsar survey, we then
+compute the selection effects for each pulsar in our population to evaluate which systems would be detectable
+and how their observed parameters might be biased by
+survey sensitivity limits and observational systematics. </br>
+To evaluate the ability of a survey to detect a pulsar in
+a single star or binary system, we calculate four types of
+selection effects. These include the minimum observable
+luminosity, the beaming fraction, pulsar death lines, and
+Bagchi correction. For each selection effect (except the
+pulsar beaming fraction) it is determined if the pulsar is
+detected or not. By sorting out all of the non-detections
+and compiling these effects, we investigate the population of detectable pulsars. </br>
+However, to accurately determine the likelihood of a
+survey detecting the pulsar, we need to consider the fraction of the sky covered by its beam. This is the beaming
+fraction.</br>
+In general, a larger beam width makes detecting the pulsar easier since the survey is more likely to cover an area
+of the sky that overlaps with the beam.
 These calculations are applied to each neutron star,
 whether in isolation or in a binary system.
         </p>
