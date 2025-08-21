@@ -96,18 +96,145 @@ whether in isolation or in a binary system.
         </p>
 
         <h3 id="Results">Results</h3>
-        <p style="margin-bottom: 2em">Add results here!
-        <img src="project_pages/selection_eff_plots/CDF_SKA.png"></br>
-        <img src="project_pages/selection_eff_plots/CDF_SKA_weighted.png"></br>
-        <img src="project_pages/selection_eff_plots/PDF_e.png"></br>
-        <img src="project_pages/selection_eff_plots/PDF_python_SKA.png"></br>
-        <img src="project_pages/selection_eff_plots/PPdot_Python_SKA_deathline_bagchi.png"></br>
-        <img src="project_pages/selection_eff_plots/Skymap_SKA.png"></br>
-        Image text.
+        <p style="margin-bottom: 2em">
+          In both the Python and psrEvolve code (Oslowski
+et al. 2011) the radiometer equation is implemented
+first. This is
+the only selection effect implemented in psrEvolve, so to
+compare the performance of the Python code to those
+of psrEvolve, we must only consider this effect. When
+we calculate all of the resulting selection effects, we used
+parameters from the SKA survey (Shao et al. 2015).
+To visually check the distribution of detections returned by python against those given by psrEvolve, we
+plot P-Pdot diagrams. The P-Pdot diagram illustrates where
+a pulsar is in it’s life by relating its rotational period
+(P) to the change in its rotational period (Pdot). We plot
+the P-Pdot diagram of detections and non-detections for
+the results of both the psrEvovle and Python code only
+considering the radiometer equation. By comparing the
+distribution of ”detected” pulsars we can get an idea of
+how well the python pipeline is reproducing the results
+from psrEvolve. In the following figure we removed all the pul-
+sars which fall below the theoretical death lines given
+by Chattopadhyay et al. (2020) and Rudak and Ritter
+(1994). We are not considering the radio efficiency parameters yet. We see that while
+the distribution of non-detections does not match up
+well, the overall distribution of detections is good. It
+can also be observed that the Python pipeline produces
+fewer non-detections than the psrEvolve code. This is
+due to a bug in psrEvolve which caused the effective
+pulse width to be a much higher value and held it constant. Due to the effective pulse width dependence on
+period, this should not be the case. This is resolved
+in the Python code and gives it a higher detection rate
+because the threshold for detectability is lower. </br>
+<img src="/homepage/project_pages/selection_eff_plots/PPdot_Python_SKA_cut.png"></br>
+Figure 1. Pulsar spin period against spin down period.
+The distribution of non-detections are marked for both the
+Python and psrEvolve (Oslowski et al. 2011) outputs. We
+cut off everything below the theoretical death lines in Chat-
+topadhyay et al. (2020). </br>
+
+We statistically check the accuracy of the output from
+python using the KS test. This test measures how sim-
+ilar the underlying distribution of two samples are and
+returns the result as a p value. A p value close to 1
+means that the two test samples follow a very similar
+distribution. A p value close to 0 means that the distri-
+bution of the samples are not significantly similar. We
+want a p value close to 1 since we need the distribution
+of detected values by the python pipeline to be very sim-
+ilar to the detected values returned by psrEvolve. We
+found a p-value for the SKA survey of 0.981 which means
+that the Python pipeline reproduces the underlying dis-
+tribution the C results very well when only using the
+radiometer equation for selection effects (Figure 3).</br>
+<img src="/homepage/project_pages/selection_eff_plots/CDF_SKA.png"></br>
+Figure 2. Cumulative distribution of detections returned
+by the Python pipeline compared to the detections returned
+by the C pipeline. In both of these, the only selection effect
+that is considered is the radiometer equation. </br>
+      
+The second effect that we consider are the death lines
+of the pulsars. These death lines remove the ”dead”
+pulsars which are no longer emitting strong radio signals
+and can therefore not be detected by a survey. The first
+P-Pdot that we consider removes all of the pulsars
+which do not have sufficient power in the spin period
+and magnetic field to accelerate particles and produce
+the radio emission beams. The second death shown in
+Figures 1 and 3 marks the theoretical limit where pulsars
+are unable to produce the election and positron pairs
+necessary to sustain their radio emissions.
+However, radio pulsars have been detected beyond the
+pair production limit. We use a comparison radio effi-
+ciency factor to the maximum efficiency. This more accurately determines if the pulsar is radio dead by directly determining if it has enough
+power to sustain radio emissions. As illustrated in Figure 3, this soft cutoff allows some pulsars to fall below
+the pair production death line, allowing for a more accurate distribution of detections.</br>
+<img src="project_pages/selection_eff_plots/PPdot_Python_SKA_deathline_bagchi.png"></br>
+Figure 3. Spin period against spin down rate of the generated population of pulsars. In this plot, we only considered the minimum observable luminosity
+      and the death lines.</br>
+We have determined that the Python and psrEvolve
+codes are returning similar results. We now incorporate
+the effects of the beaming fraction in the detection of pulsars. We weight the detections from the Python code by the beaming fraction to
+more realistically represent the distribution of detectable
+pulsars. This distribution is a more realistic example of
+what we might detect because the pulsars which have
+shorter spin periods are easier to detect than those with
+longer spin periods. The shorter the spin period, the
+more likely it is for the pulsar to be detected by the
+survey because the pulses are more frequent. This is
+illustrated in Figure 4. Detections occur frequently at
+lower spin periods but taper off as the spin periods increase. </br>
+      <img src="/homepage/project_pages/selection_eff_plots/PDF_python_SKA.png"></br>
+Figure 4. Probability density function of both the weighted
+and unweighted python detections. The weights used are the
+beaming fractions of the pulsars.</br>
+      
+The fourth selection effect that we consider is the
+Bagchi correction (Bagchi et al. 2013). We investigate how this correction affects the distribution of detections using a fixed orbital
+period of 3 days for all pulsar binaries in the system.
+Eccentricity and spin period of the pulsars are allowed
+to vary. Examining Figure 5, we see that most of the detections are occurring at high eccentricities. These high
+eccentricities with short orbital periods make the pulsar
+easier to detect because it does not have as much time to
+get gravitationally perturbed by it’s more massive companion. In an eccentric orbit the pulsar spends much
+of the time at aphelion, away from the massive companion. The signal we receive will only occasionally get
+slightly perturbed when the pulsar sweeps by the massive companion at perihelion. This means much of the
+time, the pulsar is emitting a steady signal, detectable
+by a survey. </br>
+      <img src="/homepage/project_pages/selection_eff_plots/PDF_e.png"></br>
+Figure 5. Probability density function of the detections
+returned by the Python pipeline. This data was specifically
+curated so that each binary system has an orbital period of
+3 days.
         </p>
 
         <h3 id="Discussion">Summary</h3>
-        <p style="margin-bottom: 2em">Add discussion here!</p>
+        <p style="margin-bottom: 2em">We have developed a pipeline to determine selection
+effects for a population of binary pulsars. This pipeline
+was created in Python and builds on the psrEvolve
+pipeline (Oslowski et al. 2011). In the new Python
+pipeline we include four types of selection effects. These
+include the minimum detectable luminosity of a pulsar (given by the radiometer equation), the
+beaming fraction, the pulsar death lines and Bagchi correction. </br>
+We run generated data through both pipelines and
+test the similarity of the results to ensure the Python
+code is correctly implementing the radiometer equation.
+We test the similarity of the outputs using K-S testing.
+The returned p-value indicates that the overall distribution of results from psrEvolve match up well with those
+from our Python code.</br>
+Finally, we test how implementing the other types of
+selection effects changes the detected population of pulsars. </br>
+In future work, we will use POSYDON simulations
+Fragos et al. (2025) to generate realistic pulsar data with
+which we will test our selection effects code. The binary pulsar simulations through POSYDON give data
+in which the pulsar parameters are correlated, unlike the
+distribution of pulsars used to test the Python pipeline
+in this work. Applying the selection effects on realistic
+data will allow us to investigate how they affect a more
+accurate distribution.</br>
+The Python selection effects code is available upon
+reasonable request to the author.</p>
 
         <h5>Acknowledgements</h5>
 
