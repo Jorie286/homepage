@@ -8,6 +8,8 @@ images:
   desc: Polites butterfly on a thistle.
 - src: /assets/images/photos/shroom.jpg
   desc: Cerioporus fungus growing on a fallen log.
+- src: /assets/images/photos/shroom2.jpg
+  desc: Jack-o'-lantern mushrooms growing among leaf litter.
 ---
 
 {% include widgets/carousel.html id=page.id images=page.images height=page.height %}
