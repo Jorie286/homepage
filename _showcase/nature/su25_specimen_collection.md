@@ -10,6 +10,8 @@ images:
   desc: Cerioporus fungus growing on a fallen log.
 - src: /assets/images/photos/shroom2.jpg
   desc: Jack-o'-lantern mushrooms growing among leaf litter.
+- src: /assets/images/photos/shroom3.jpg
+- src: /assets/images/photos/slug.jpg
 ---
 
 {% include widgets/carousel.html id=page.id images=page.images height=page.height %}
